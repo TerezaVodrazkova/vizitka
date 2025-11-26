@@ -7,48 +7,144 @@
   <title>Digitální vizitka – Tereza Vodrážková</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
-    body {font-family:Arial, sans-serif; margin:0; padding:24px; background:#e7eef8;
-          display:flex; justify-content:center; align-items:center; min-height:100vh;}
-    .card {background:#fff; padding:32px; border-radius:20px; width:380px; text-align:center;
-           box-shadow:0 14px 35px rgba(0,0,0,0.15);}
-    .logo img {width:150px; margin-bottom:16px;}
-    .avatar img {width:86px; height:86px; border-radius:50%; object-fit:cover;
-                 box-shadow:0 6px 16px rgba(0,0,0,0.3); margin-bottom:16px;}
-    .button {display:block; margin:8px 0; background:#1e88e5; color:#fff; padding:11px;
-             border-radius:999px; text-decoration:none; font-weight:600;}
-    .button:hover {background:#1565c0;}
-    .footer a {font-weight:600; text-decoration:none; color:#1e88e5;}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #e7eef8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 20px;
+      width: 380px;
+      max-width: 100%;
+      text-align: center;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+    }
+    .logo img {
+      width: 150px;
+      margin-bottom: 16px;
+    }
+    .avatar img {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.7rem;
+    }
+    .role {
+      margin: 0 0 16px;
+      color: #444;
+      font-size: 0.98rem;
+    }
+    .contact-main p {
+      margin: 2px 0;
+      font-size: 0.98rem;
+    }
+    .email-line {
+      margin-top: 4px;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    .buttons {
+      margin: 18px 0 20px;
+    }
+    .button {
+      display: block;
+      margin: 8px 0;
+      background: #1e88e5;
+      color: #fff;
+      padding: 11px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .button:hover {
+      background: #1565c0;
+    }
+    .footer {
+      margin-top: 22px;
+      line-height: 1.6;
+      font-size: 0.93rem;
+    }
+    .footer-links {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+    .footer a {
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e88e5;
+    }
+    @media (max-width: 420px) {
+      body {
+        padding: 16px;
+      }
+      .card {
+        padding: 24px 18px 22px;
+      }
+      .footer-links {
+        font-size: 0.85rem;
+      }
+      .email-line {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
 <div class="card">
-  <div class="logo"><img src="logo.png" alt=""></div>
-  <div class="avatar"><img src="profile.jpg" alt=""></div>
+  <div class="logo"><img src="logo.png" alt="ČSOB Pojišťovna"></div>
+  <div class="avatar"><img src="profile.jpg" alt="Tereza Vodrážková"></div>
+
   <h1>Tereza Vodrážková</h1>
-  <p>Pojišťovací poradkyně, ČSOB Pojišťovna Olomouc</p>
-  <p>📞 +420 602 208 160<br>✉️ tereza.vodrazkova@obchod.csobpoj.cz</p>
+  <p class="role">Pojišťovací poradkyně, ČSOB Pojišťovna Olomouc</p>
 
-  <a href="tel:+420602208160" class="button">📞 Zavolat</a>
-  <a href="mailto:tereza.vodrazkova@obchod.csobpoj.cz" class="button">✉️ Napsat e-mail</a>
-  <a href="https://www.google.com/maps/place/t%C5%99.+Kosmonaut%C5%AF+1338%2F1a,+779+00+Olomouc+9"
-     class="button" target="_blank">📍 Zobrazit adresu kanceláře</a>
+  <div class="contact-main">
+    <p>📞 +420 602 208 160</p>
+    <p class="email-line">✉️ tereza.vodrazkova@obchod.csobpoj.cz</p>
+  </div>
 
-  <p class="footer" style="margin-top:22px; line-height:1.6;">
-    ČSOB Pojišťovna, a. s., člen holdingu ČSOB<br>
-    BEA Campus, tř. Kosmonautů 1338/1a, 779 00 Olomouc<br>
-    <a href="tel:+420466100777">ℹ️ +420 466 100 777</a> ·
-    <a href="https://www.csobpoj.cz" target="_blank">🌐 www.csobpoj.cz</a>
-  </p>
+  <div class="buttons">
+    <a href="tel:+420602208160" class="button">📞 Zavolat</a>
+    <a href="mailto:tereza.vodrazkova@obchod.csobpoj.cz" class="button">✉️ Napsat e-mail</a>
+    <a href="https://www.google.com/maps/place/t%C5%99.+Kosmonaut%C5%AF+1338%2F1a,+779+00+Olomouc+9"
+       class="button" target="_blank" rel="noopener noreferrer">📍 Zobrazit adresu kanceláře</a>
+  </div>
+
+  <div class="footer">
+    <div>
+      ČSOB Pojišťovna, a. s., člen holdingu ČSOB<br>
+      BEA Campus, tř. Kosmonautů 1338/1a, 779 00 Olomouc
+    </div>
+    <div class="footer-links">
+      <a href="tel:+420466100777">ℹ️ +420 466 100 777</a> ·
+      <a href="https://www.csobpoj.cz" target="_blank" rel="noopener noreferrer">🌐 www.csobpoj.cz</a>
+    </div>
+  </div>
 
   <img id="banner" src="" style="width:100%; border-radius:14px; margin-top:22px;">
 </div>
 
 <script>
-  const month=new Date().getMonth();
-  const b=["banner_01.jpg","banner_02.jpg","banner_03.jpg","banner_04.jpg",
-           "banner_05.jpg","banner_06.jpg","banner_07.jpg","banner_08.jpg",
-           "banner_09.jpg","banner_10.jpg","banner_11.jpg","banner_12.jpg"];
-  document.getElementById("banner").src=b[month];
+  const month = new Date().getMonth();
+  const b = [
+    "banner_01.jpg","banner_02.jpg","banner_03.jpg","banner_04.jpg",
+    "banner_05.jpg","banner_06.jpg","banner_07.jpg","banner_08.jpg",
+    "banner_09.jpg","banner_10.jpg","banner_11.jpg","banner_12.jpg"
+  ];
+  document.getElementById("banner").src = b[month];
 </script>
 </body>
 </html>
