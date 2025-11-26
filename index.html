@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digitální vizitka – Tereza Vodrážková</title>
+  <!-- Favicon – nahraj do stejné složky soubor favicon.png nebo favicon.ico -->
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     :root {
       --primary: #1e88e5;
@@ -43,12 +45,27 @@
     .logo-wrap {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .logo-wrap img {
       width: 150px;
       max-width: 70%;
+    }
+
+    .avatar-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .avatar-wrap img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.25);
+      border: 3px solid #ffffff;
     }
 
     h1 {
@@ -118,6 +135,7 @@
       font-size: 0.88rem;
       color: #444;
       line-height: 1.7;
+      margin-top: 24px;
     }
 
     .footer p {
@@ -159,6 +177,12 @@
   <div class="card">
     <div class="logo-wrap">
       <img src="logo.png" alt="ČSOB Pojišťovna">
+    </div>
+
+    <!-- Kulatá profilová fotka nad jménem -->
+    <div class="avatar-wrap">
+      <!-- Nahraj svůj portrét jako profile.jpg do stejné složky -->
+      <img src="profile.jpg" alt="Profilová fotografie – Tereza Vodrážková">
     </div>
 
     <h1>Tereza Vodrážková</h1>
